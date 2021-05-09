@@ -1,4 +1,4 @@
-package com.beyond233.netty;
+package com.beyond233.netty.eventloop;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -15,13 +15,13 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 public class TimeServer {
 
     public void bind(int port) throws Exception {
-        // 构造NIO线程组
+        // 构造NIO线程组: 分工细化，boss处理serverSocketChannel上的accept事件，worker处理socketChannel上的读写
         NioEventLoopGroup bossGroup = new NioEventLoopGroup();
-        NioEventLoopGroup workerGroup = new NioEventLoopGroup();
+        NioEventLoopGroup workerGroup = new NioEventLoopGroup(2);
         try {
             // 构造server启动辅助类
             ServerBootstrap server = new ServerBootstrap();
-            server.group(workerGroup, workerGroup)
+            server.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG, 1024)
                     .childHandler(null);

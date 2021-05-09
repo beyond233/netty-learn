@@ -1,4 +1,4 @@
-package com.beyond233.netty;
+package com.beyond233.netty.eventloop;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
