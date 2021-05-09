@@ -1,4 +1,4 @@
-package com.beyond233.netty;
+package com.beyond233.netty.handler;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -46,7 +46,10 @@ public class TestPipeline {
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                 log.debug("h3");
                                 super.channelRead(ctx, msg);
+                                // channel将会从当前handler向后寻找handler链上的下一个outboundHandler
                                 ch.writeAndFlush(ctx.alloc().buffer().writeBytes("server".getBytes()));
+                                // 寻找下一个outboundHandler的顺序与channel相反，是从当前handler向前寻找
+//                                ctx.writeAndFlush(ctx.alloc().buffer().writeBytes("server".getBytes()));
                             }
 
                     });
