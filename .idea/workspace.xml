@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56fb0c25-0b37-47e6-b70e-f4f328c53e44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/beyond233/netty/datagram/LineClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/beyond233/netty/datagram/LineServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/beyond233/netty/datagram/TestLengthFieldDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/beyond233/netty/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beyond233/netty/datagram/DelimiterClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beyond233/netty/datagram/DelimiterServer.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="netty-learn" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\apache-maven-3.6.3\localRepository" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sAHG7IkycvQ8Q49mX0QRD9GfQl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/beyond233/netty/handler" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\netty-learn\src\main\java\com\beyond233\netty\handler" />
+      <recent name="D:\IdeaProjects\netty-learn\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestLengthFieldDecoder">
+    <configuration name="FixedClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beyond233.netty.datagram.FixedClient" />
+      <module name="netty-learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beyond233.netty.datagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beyond233.netty.datagram.LineClient" />
+      <module name="netty-learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beyond233.netty.datagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beyond233.netty.datagram.LineServer" />
+      <module name="netty-learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beyond233.netty.datagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beyond233.netty.util.StringUtil" />
+      <module name="netty-learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beyond233.netty.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLengthFieldDecoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beyond233.netty.datagram.TestLengthFieldDecoder" />
+      <module name="netty-learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beyond233.netty.datagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestLengthFieldDecoder" />
+        <item itemvalue="Application.StringUtil" />
+        <item itemvalue="Application.LineClient" />
+        <item itemvalue="Application.LineServer" />
+        <item itemvalue="Application.FixedClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56fb0c25-0b37-47e6-b70e-f4f328c53e44" name="Default Changelist" comment="" />
+      <created>1620308374182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620308374182</updated>
+      <workItem from="1620308375412" duration="2213000" />
+      <workItem from="1620343439727" duration="652000" />
+      <workItem from="1620384892075" duration="2008000" />
+      <workItem from="1620477425329" duration="68000" />
+      <workItem from="1620525792568" duration="24674000" />
+      <workItem from="1620660024080" duration="1463000" />
+      <workItem from="1620730402715" duration="2580000" />
+      <workItem from="1620744594969" duration="4129000" />
+      <workItem from="1620827751870" duration="6075000" />
+    </task>
+    <task id="LOCAL-00001" summary="netty learn">
+      <created>1620343577307</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620343577307</updated>
+    </task>
+    <task id="LOCAL-00002" summary="learn sync,async,future,handler">
+      <created>1620560482925</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620560482925</updated>
+    </task>
+    <task id="LOCAL-00003" summary="定长帧解码器解决粘包、拆包问题">
+      <created>1620748346752</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620748346752</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="netty learn" />
+    <MESSAGE value="learn sync,async,future,handler" />
+    <MESSAGE value="定长帧解码器解决粘包、拆包问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="定长帧解码器解决粘包、拆包问题" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1732" y="377" key="#HelloClient" timestamp="1620533030723">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1732" y="377" key="#HelloClient/0.0.2560.1400@0.0.2560.1400" timestamp="1620533030723" />
+    <state x="1614" y="362" key="#Project_Structure" timestamp="1620550686144">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1614" y="362" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1620550686144" />
+    <state x="1710" y="391" key="#com.intellij.ide.util.MemberChooser" timestamp="1620828677616">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state x="1710" y="391" key="#com.intellij.ide.util.MemberChooser/0.0.2394.1307@0.0.2394.1307" timestamp="1620828677616" />
+    <state x="1829" y="419" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1620555604812" />
+    <state x="1536" y="279" key="CommitChangelistDialog2" timestamp="1620748804382">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state x="1536" y="279" key="CommitChangelistDialog2/0.0.2394.1307@0.0.2394.1307" timestamp="1620748804382" />
+    <state x="1643" y="299" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1620560482225" />
+    <state width="1106" height="295" key="GridCell.Tab.0.bottom" timestamp="1620834814368">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="295" key="GridCell.Tab.0.bottom/0.0.2394.1307@0.0.2394.1307" timestamp="1620834814368" />
+    <state width="1075" height="321" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620569834690" />
+    <state width="1106" height="295" key="GridCell.Tab.0.center" timestamp="1620834814368">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="295" key="GridCell.Tab.0.center/0.0.2394.1307@0.0.2394.1307" timestamp="1620834814368" />
+    <state width="1075" height="321" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620569834690" />
+    <state width="1106" height="295" key="GridCell.Tab.0.left" timestamp="1620834814368">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="295" key="GridCell.Tab.0.left/0.0.2394.1307@0.0.2394.1307" timestamp="1620834814368" />
+    <state width="1075" height="321" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620569834690" />
+    <state width="1106" height="295" key="GridCell.Tab.0.right" timestamp="1620834814368">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="295" key="GridCell.Tab.0.right/0.0.2394.1307@0.0.2394.1307" timestamp="1620834814368" />
+    <state width="1075" height="321" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620569834690" />
+    <state width="1106" height="452" key="GridCell.Tab.1.bottom" timestamp="1620834042211">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="452" key="GridCell.Tab.1.bottom/0.0.2394.1307@0.0.2394.1307" timestamp="1620834042211" />
+    <state width="1106" height="452" key="GridCell.Tab.1.center" timestamp="1620834042211">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="452" key="GridCell.Tab.1.center/0.0.2394.1307@0.0.2394.1307" timestamp="1620834042211" />
+    <state width="1106" height="452" key="GridCell.Tab.1.left" timestamp="1620834042210">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="452" key="GridCell.Tab.1.left/0.0.2394.1307@0.0.2394.1307" timestamp="1620834042210" />
+    <state width="1106" height="452" key="GridCell.Tab.1.right" timestamp="1620834042211">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state width="1106" height="452" key="GridCell.Tab.1.right/0.0.2394.1307@0.0.2394.1307" timestamp="1620834042211" />
+    <state x="1827" y="413" key="RollbackChangesDialog" timestamp="1620530859698">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1827" y="413" key="RollbackChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620530859698" />
+    <state x="1356" y="260" key="SettingsEditor" timestamp="1620745979953">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state x="1356" y="260" key="SettingsEditor/0.0.2394.1307@0.0.2394.1307" timestamp="1620745979953" />
+    <state x="1488" y="278" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1620660979410" />
+    <state x="1509" y="396" key="Vcs.Push.Dialog.v2" timestamp="1620748806431">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state x="1509" y="396" key="Vcs.Push.Dialog.v2/0.0.2394.1307@0.0.2394.1307" timestamp="1620748806431" />
+    <state x="1614" y="424" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1620560485363" />
+    <state x="1702" y="577" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620834890175">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state x="1702" y="577" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2394.1307@0.0.2394.1307" timestamp="1620834890175" />
+    <state x="1820" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1620743786766" />
+    <state x="1621" y="400" width="773" height="600" key="find.popup" timestamp="1620564287774">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1621" y="400" width="773" height="600" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1620564287774" />
+    <state x="1563" y="298" width="672" height="633" key="search.everywhere.popup" timestamp="1620832228490">
+      <screen x="0" y="0" width="2394" height="1307" />
+    </state>
+    <state x="1563" y="298" width="672" height="633" key="search.everywhere.popup/0.0.2394.1307@0.0.2394.1307" timestamp="1620832228490" />
+    <state x="1671" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1620744163657" />
+  </component>
+</project>
