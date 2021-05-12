@@ -22,7 +22,7 @@ public class TestLengthFieldDecoder {
     public static void main(String[] args) {
         LengthFieldBasedFrameDecoder lengthDecoder =
                 //  lengthAdjustment表示跳过多少个字节是真正的消息内容 ; initialByteToStrip-去除前面多少个字节
-                new LengthFieldBasedFrameDecoder(1024, 0, 4, 1, 0);
+                new LengthFieldBasedFrameDecoder(1024, 0, 4, 0, 0);
         StringDecoder stringDecoder = new StringDecoder();
         ChannelInboundHandlerAdapter handlerAdapter = new ChannelInboundHandlerAdapter() {
             @Override
