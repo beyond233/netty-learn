@@ -58,17 +58,17 @@ public class Connect2Redis {
                                     buffer.writeBytes("*3".getBytes());
                                     // 每条数据之间添加回车和换行
                                     buffer.writeBytes(LINE);
-                                    // $3代表命令set的长度
+                                    // $3代表命令set有3个字节
                                     buffer.writeBytes("$3".getBytes());
                                     buffer.writeBytes(LINE);
                                     buffer.writeBytes("set".getBytes());
                                     buffer.writeBytes(LINE);
-                                    // $4代表name的长度
+                                    // $4代表name有4个字节
                                     buffer.writeBytes("$4".getBytes());
                                     buffer.writeBytes(LINE);
                                     buffer.writeBytes("name".getBytes());
                                     buffer.writeBytes(LINE);
-                                    // $8代表beyond233的长度
+                                    // $9代表beyond233的有9个字节
                                     buffer.writeBytes("$9".getBytes());
                                     buffer.writeBytes(LINE);
                                     buffer.writeBytes("beyond233".getBytes());
