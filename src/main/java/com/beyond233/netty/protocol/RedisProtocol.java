@@ -21,7 +21,7 @@ import java.nio.charset.Charset;
  * @since 2021/5/13 23:03
  */
 @Slf4j
-public class Connect2Redis {
+public class RedisProtocol {
     public static void main(String[] args) {
         // 13代表回车 ，10代表换行
         final byte[] LINE = {13, 10};
