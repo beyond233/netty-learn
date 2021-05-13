@@ -54,6 +54,7 @@ public class HttpProtocol {
 //                                }
 //                            });
 
+                            // SimpleChannelInboundHandler<HttpRequest>表示只在处理对象为httpRequest时才执行下面handler代码
                             ch.pipeline().addLast(new SimpleChannelInboundHandler<HttpRequest>() {
                                 @Override
                                 protected void channelRead0(ChannelHandlerContext ctx, HttpRequest msg) throws Exception {
