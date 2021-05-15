@@ -8,7 +8,7 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.logging.LoggingHandler;
 
 /**
- * description:
+ * description: 消息编解码器测试
  *
  * @author beyond233
  * @since 2021/5/14 22:17
@@ -29,6 +29,7 @@ public class MessageCodecTest {
         ByteBuf byteBuf = ByteBufAllocator.DEFAULT.buffer();
         // 入站前先手动把消息编码下
         new MessageCodec().encode(null, message, byteBuf);
+        //调用writeInbound(byteBuf)后会调用release()方法将byteBuf的引用计数减  1
         channel.writeInbound(byteBuf);
 
 

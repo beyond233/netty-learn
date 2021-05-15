@@ -2,8 +2,9 @@ package com.beyond233.netty.protocol;
 
 import com.beyond233.netty.protocol.message.Message;
 import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.handler.codec.ByteToMessageCodec;
+import io.netty.handler.codec.MessageToMessageCodec;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.ByteArrayInputStream;
@@ -13,19 +14,19 @@ import java.io.ObjectOutputStream;
 import java.util.List;
 
 /**
- * description: 自定义消息编解码器
+ * description: 可被复用的无状态的消息解码器,必须和LengthFieldBasedFrameDecoder一起使用，
+ * 以此确保decode()方法中接收到的byteBuf是完整的数据包
  *
  * @author beyond233
- * @since 2021/5/14 21:31
+ * @since 2021/5/15 16:56
  */
 @Slf4j
-public class MessageCodec extends ByteToMessageCodec<Message> {
+@ChannelHandler.Sharable
+public class MessageCodecSharable extends MessageToMessageCodec<ByteBuf, Message> {
 
-    /**
-     * 消息编码
-     */
     @Override
-    protected void encode(ChannelHandlerContext ctx, Message msg, ByteBuf out) throws Exception {
+    protected void encode(ChannelHandlerContext ctx, Message msg, List<Object> outList) throws Exception {
+        ByteBuf out = ctx.alloc().buffer();
         // 1. 4字节的魔数： 用来再第一时间判定是否是无效数据包
         out.writeBytes(new byte[]{1, 2, 3, 4});
         // 2. 1字节的版本号
@@ -48,13 +49,12 @@ public class MessageCodec extends ByteToMessageCodec<Message> {
         out.writeInt(bytes.length);
         // 7. 消息正文内容
         out.writeBytes(bytes);
+
+        outList.add(out);
     }
 
-    /**
-     * 消息解码
-     **/
     @Override
-    protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
+    protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> outList) throws Exception {
         int magicNum = in.readInt();
         byte version = in.readByte();
         byte serializeType = in.readByte();
@@ -73,6 +73,9 @@ public class MessageCodec extends ByteToMessageCodec<Message> {
             log.debug("消息解码：magicNum={}, version={}, serializeType={}, messageType={}, sequenceId={}, length={}"
                     , magicNum, version, serializeType, messageType, sequenceId, length);
             log.debug("消息解码：message={}", message);
+
+            outList.add(message);
         }
+
     }
 }
