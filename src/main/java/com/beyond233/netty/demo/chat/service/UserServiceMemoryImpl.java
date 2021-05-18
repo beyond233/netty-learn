@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo.server.service;
+package com.beyond233.netty.demo.chat.service;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

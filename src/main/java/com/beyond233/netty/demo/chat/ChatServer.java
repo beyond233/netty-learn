@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo.server;
+package com.beyond233.netty.demo.chat;
 
 /**
  * description: 聊天服务器

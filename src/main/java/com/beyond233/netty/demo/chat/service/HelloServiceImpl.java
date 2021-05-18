@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo.server.service;
+package com.beyond233.netty.demo.chat.service;
 
 public class HelloServiceImpl implements HelloService {
     @Override

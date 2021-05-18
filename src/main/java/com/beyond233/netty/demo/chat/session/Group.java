@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo.server.session;
+package com.beyond233.netty.demo.chat.session;
 
 import lombok.Data;
 

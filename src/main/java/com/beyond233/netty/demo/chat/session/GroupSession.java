@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo.server.session;
+package com.beyond233.netty.demo.chat.session;
 
 import io.netty.channel.Channel;
 
