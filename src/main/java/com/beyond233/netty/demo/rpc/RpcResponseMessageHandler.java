@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo;
+package com.beyond233.netty.demo.rpc;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

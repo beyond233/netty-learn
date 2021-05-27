@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo;
+package com.beyond233.netty.demo.rpc;
 
 import com.beyond233.netty.protocol.MessageCodecSharable;
 import com.beyond233.netty.protocol.ProtocolFrameDecoder;
@@ -45,8 +45,9 @@ public class RpcClient {
             Channel channel = bootstrap.connect("localhost", 8080).sync().channel();
 
             // 向服务端发送rpc请求消息
-            RpcRequestMessage requestMessage = new RpcRequestMessage(1, "HelloService",
-                    "sayHello", String.class, new Class[]{String.class}, new Object[]{"beyond"});
+            RpcRequestMessage requestMessage =
+                    new RpcRequestMessage(1, "com.beyond233.netty.demo.chat.service.HelloService",
+                            "sayHello", String.class, new Class[]{String.class}, new Object[]{"beyond"});
             ChannelFuture channelFuture = channel
                     .writeAndFlush(requestMessage)
                     .addListener(promise -> {
@@ -55,12 +56,13 @@ public class RpcClient {
                             log.debug("RPC请求发送成功");
                             promise.notify();
                         } else {
+                            log.debug("RPC失败，原因:", promise.cause());
                             log.debug("RPC请求发送失败，尝试再次发送");
                             channel.writeAndFlush(requestMessage);
                         }
                     });
 
-//            channel.closeFuture().sync();
+            channel.closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {

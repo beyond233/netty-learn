@@ -1,4 +1,4 @@
-package com.beyond233.netty.demo;
+package com.beyond233.netty.demo.rpc;
 
 import com.beyond233.netty.protocol.MessageCodecSharable;
 import com.beyond233.netty.protocol.ProtocolFrameDecoder;

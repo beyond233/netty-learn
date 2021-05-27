@@ -3,7 +3,6 @@ package com.beyond233.netty.eventloop;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
@@ -50,18 +49,19 @@ public class HelloClient {
         // 向channel写数据并向立刻向server发出
         channel.writeAndFlush("hello server (sync message)");
 
-        // 6.2 除了sync同步处理外，还可以使用addListener(回调对象)来异步处理结果
-        channelFuture.addListener(new ChannelFutureListener() {
-            /**
-             * 在nio线程建立好连接后，会调用operationComplete()
-             * */
-            public void operationComplete(ChannelFuture future) throws Exception {
-                Channel channel = future.channel();
-                // 由nio线程输出日志
-                log.debug(channel.toString());
-                channel.writeAndFlush("hello server (async message)");
-            }
-        });
+//        // 6.2 除了sync同步处理外，还可以使用addListener(回调对象)来异步处理结果
+//        channelFuture.addListener(new ChannelFutureListener() {
+//            /**
+//             * 在nio线程建立好连接后，会调用operationComplete()
+//             * */
+//            @Override
+//            public void operationComplete(ChannelFuture future) throws Exception {
+//                Channel channel = future.channel();
+//                // 由nio线程输出日志
+//                log.debug(channel.toString());
+//                channel.writeAndFlush("hello server (async message)");
+//            }
+//        });
 
     }
 }
