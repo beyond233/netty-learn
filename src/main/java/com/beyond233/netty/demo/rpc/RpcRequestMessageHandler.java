@@ -2,7 +2,6 @@ package com.beyond233.netty.demo.rpc;
 
 import com.beyond233.netty.demo.chat.service.HelloService;
 import com.beyond233.netty.demo.chat.service.ServicesFactory;
-import com.beyond233.netty.protocol.message.Message;
 import com.beyond233.netty.protocol.message.RpcRequestMessage;
 import com.beyond233.netty.protocol.message.RpcResponseMessage;
 import io.netty.channel.ChannelHandler;
@@ -25,6 +24,7 @@ public class RpcRequestMessageHandler extends SimpleChannelInboundHandler<RpcReq
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, RpcRequestMessage msg) throws Exception {
         RpcResponseMessage response = new RpcResponseMessage();
+        response.setSequenceId(msg.getSequenceId());
 
         try {
             // 1.按照请求去执行对应service的方法
@@ -32,15 +32,13 @@ public class RpcRequestMessageHandler extends SimpleChannelInboundHandler<RpcReq
             Method method = helloService.getClass().getMethod(msg.getMethodName(), msg.getParameterTypes());
             Object result = method.invoke(helloService, msg.getParameterValue());
             // 2.封装响应消息
-            response.setMessageType(Message.RPC_MESSAGE_TYPE_RESPONSE);
             response.setReturnValue(result);
         } catch (Exception e) {
             e.printStackTrace();
+            response.setExceptionValue(new Exception("RPC异常,原因: " + e.getCause().getMessage()));
         }
 
         // 3.响应客户端
         ctx.writeAndFlush(response);
-
-
     }
 }
