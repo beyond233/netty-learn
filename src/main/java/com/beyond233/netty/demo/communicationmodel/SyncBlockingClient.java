@@ -29,7 +29,7 @@ public class SyncBlockingClient {
         }
 
         // 2.模拟有10个客户端连接服务端
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10000; i++) {
             new Client(port).start();
         }
     }
